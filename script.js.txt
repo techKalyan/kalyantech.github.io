@@ -1,0 +1,29 @@
+// footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// last updated
+const options = { year: 'numeric', month: 'short', day: '2-digit' };
+document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString(undefined, options);
+
+// project filters
+const chips = Array.from(document.querySelectorAll('.chip'));
+const cards = Array.from(document.querySelectorAll('.card'));
+
+function setActiveChip(active) {
+	chips.forEach(c => c.classList.toggle('is-active', c === active));
+}
+
+function applyFilter(tag) {
+	cards.forEach(card => {
+		const tags = (card.dataset.tags || '').split(' ');
+		const show = tag === 'all' || tags.includes(tag);
+		card.style.display = show ? '' : 'none';
+	});
+}
+
+chips.forEach(chip => {
+	chip.addEventListener('click', () => {
+		setActiveChip(chip);
+		applyFilter(chip.dataset.filter);
+	});
+});

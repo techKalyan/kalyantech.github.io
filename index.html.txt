@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Kumar Kalyan | Data Analyst Portfolio</title>
+	<meta name="description" content="Aspiring Data Analyst skilled in SQL, Excel, Power BI, and Python. Projects, dashboards, and case studies." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<a class="skip" href="#content">Skip to content</a>
+
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<div class="avatar" aria-hidden="true">KK</div>
+				<div>
+					<div class="name">Kumar Kalyan</div>
+					<div class="tagline">Aspiring Data Analyst • India</div>
+				</div>
+			</div>
+
+			<nav class="nav" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#certifications">Certifications</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="content">
+		<section class="hero">
+			<div class="container hero-inner">
+				<div>
+					<h1>Turning raw data into clear business decisions.</h1>
+					<p class="lead">
+						I work with <strong>SQL</strong>, <strong>Excel</strong>, <strong>Power BI</strong>, and <strong>Python</strong> to clean data, uncover insights, and build interactive dashboards.
+					</p>
+					<div class="cta-row">
+						<a class="btn" href="#projects">View projects</a>
+						<a class="btn btn-ghost" href="#contact">Contact</a>
+					</div>
+
+					<ul class="meta" role="list">
+						<li><span class="meta-label">Location</span><span>India</span></li>
+						<li><span class="meta-label">Email</span><a href="mailto:yourmail@email.com">yourmail@email.com</a></li>
+						<li><span class="meta-label">LinkedIn</span><a href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">linkedin.com/in/yourname</a></li>
+						<li><span class="meta-label">GitHub</span><a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></li>
+					</ul>
+				</div>
+
+				<aside class="hero-card" aria-label="Highlights">
+					<h2 class="card-title">Quick highlights</h2>
+					<ul class="check" role="list">
+						<li>Interactive BI dashboards</li>
+						<li>EDA and data cleaning workflows</li>
+						<li>Churn prediction modeling</li>
+						<li>SQL business case studies</li>
+					</ul>
+					<div class="small">Last updated: <span id="lastUpdated"></span></div>
+				</aside>
+			</div>
+		</section>
+
+		<section id="about" class="section">
+			<div class="container">
+				<h2>About me</h2>
+				<p>
+					Aspiring Data Analyst with strong skills in SQL, Excel, Power BI, and Python. Passionate about transforming raw data into meaningful business insights and building interactive dashboards to support decision-making.
+				</p>
+				<p>
+					I enjoy solving real-world business problems using data-driven strategies and continuously improving my analytical thinking.
+				</p>
+			</div>
+		</section>
+
+		<section id="skills" class="section section-alt">
+			<div class="container">
+				<h2>Skills</h2>
+				<div class="grid-3">
+					<div class="panel">
+						<h3>Programming & Querying</h3>
+						<ul role="list">
+							<li>SQL</li>
+							<li>Python (Pandas, NumPy, Matplotlib)</li>
+						</ul>
+					</div>
+					<div class="panel">
+						<h3>Data Visualization</h3>
+						<ul role="list">
+							<li>Power BI</li>
+							<li>Tableau</li>
+							<li>Excel dashboards</li>
+						</ul>
+					</div>
+					<div class="panel">
+						<h3>Data Handling</h3>
+						<ul role="list">
+							<li>Data cleaning</li>
+							<li>Data transformation</li>
+							<li>Exploratory Data Analysis (EDA)</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="panel tools">
+					<h3>Tools</h3>
+					<div class="pill-row" aria-label="Tools list">
+						<span class="pill">Jupyter Notebook</span>
+						<span class="pill">GitHub</span>
+						<span class="pill">MS Excel</span>
+						<span class="pill">Power BI</span>
+						<span class="pill">Tableau</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="section">
+			<div class="container">
+				<div class="section-head">
+					<h2>Projects</h2>
+					<div class="filters" role="group" aria-label="Project filters">
+						<button class="chip is-active" data-filter="all">All</button>
+						<button class="chip" data-filter="powerbi">Power BI</button>
+						<button class="chip" data-filter="python">Python</button>
+						<button class="chip" data-filter="sql">SQL</button>
+						<button class="chip" data-filter="excel">Excel</button>
+					</div>
+				</div>
+
+				<div class="cards" id="projectCards">
+					<article class="card" data-tags="powerbi excel">
+						<div class="card-top">
+							<h3>E-Commerce Sales Analysis</h3>
+							<div class="badges">
+								<span class="badge">Power BI</span>
+								<span class="badge">Excel</span>
+							</div>
+						</div>
+						<p><strong>Problem:</strong> Identify profitable regions, top categories, and loss-making products to improve profitability.</p>
+						<ul role="list" class="bullets">
+							<li><strong>Dataset:</strong> Kaggle Superstore (9,000+ rows)</li>
+							<li><strong>Columns:</strong> Order Date, Region, Category, Sales, Profit, Customer Name</li>
+						</ul>
+						<div class="preview">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg" alt="Dashboard preview placeholder" loading="lazy" />
+							<div class="preview-note">Replace with a Power BI dashboard screenshot</div>
+						</div>
+						<h4>Key insights</h4>
+						<ul role="list" class="bullets">
+							<li>West region contributes ~35% of total revenue.</li>
+							<li>Technology category has the highest profit margin.</li>
+							<li>High discounts negatively impact overall profit.</li>
+							<li>Certain sub-categories consistently generate losses.</li>
+						</ul>
+						<h4>Recommendation</h4>
+						<p>Reduce discount rates on low-margin products and focus marketing on high-performing categories.</p>
+					</article>
+
+					<article class="card" data-tags="python">
+						<div class="card-top">
+							<h3>Customer Churn Analysis</h3>
+							<div class="badges">
+								<span class="badge">Python</span>
+								<span class="badge">ML</span>
+							</div>
+						</div>
+						<p><strong>Problem:</strong> Find churn drivers and build a predictive model to reduce churn.</p>
+						<ul role="list" class="bullets">
+							<li><strong>Dataset:</strong> Telco Customer Churn (7,000+ records)</li>
+							<li><strong>Tools:</strong> Pandas, Scikit-learn, Matplotlib</li>
+						</ul>
+						<h4>Key insights</h4>
+						<ul role="list" class="bullets">
+							<li>Month-to-month contracts show higher churn.</li>
+							<li>Higher monthly charges correlate with churn.</li>
+							<li>Tenure is a strong churn predictor.</li>
+						</ul>
+						<div class="kpi">
+							<div class="kpi-num">82%</div>
+							<div class="kpi-label">Model accuracy</div>
+						</div>
+						<h4>Recommendation</h4>
+						<p>Offer loyalty discounts for long-term contracts and target retention outreach to high-risk customers.</p>
+					</article>
+
+					<article class="card" data-tags="sql">
+						<div class="card-top">
+							<h3>SQL Business Case Study</h3>
+							<div class="badges">
+								<span class="badge">SQL</span>
+							</div>
+						</div>
+						<p><strong>Objective:</strong> Analyze purchase behavior using SQL queries.</p>
+						<h4>Skills demonstrated</h4>
+						<div class="pill-row">
+							<span class="pill">JOIN</span>
+							<span class="pill">GROUP BY</span>
+							<span class="pill">HAVING</span>
+							<span class="pill">Window functions</span>
+							<span class="pill">Subqueries</span>
+						</div>
+						<h4>Example questions</h4>
+						<ul role="list" class="bullets">
+							<li>Top 5 customers by revenue</li>
+							<li>Monthly sales trend</li>
+							<li>Most profitable product category</li>
+							<li>Customer retention rate</li>
+						</ul>
+						<p class="muted">Add your repository link here: <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub SQL queries</a></p>
+					</article>
+
+					<article class="card" data-tags="python">
+						<div class="card-top">
+							<h3>Stock Market Trend Analysis</h3>
+							<div class="badges">
+								<span class="badge">Python</span>
+							</div>
+						</div>
+						<p><strong>Objective:</strong> Analyze historical stock data to identify trends and volatility.</p>
+						<ul role="list" class="bullets">
+							<li><strong>Tools:</strong> Python, Pandas, Matplotlib</li>
+							<li>Moving averages highlight long-term trend patterns.</li>
+							<li>High volatility periods can be tied to market events.</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="certifications" class="section section-alt">
+			<div class="container">
+				<h2>Certifications</h2>
+				<ul role="list" class="bullets">
+					<li>Google Data Analytics (if applicable)</li>
+					<li>SQL Certification</li>
+					<li>Power BI Certification</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact" class="section">
+			<div class="container">
+				<h2>Contact</h2>
+				<p>Want to collaborate or discuss a role? The quickest way to reach me is email.</p>
+				<div class="contact-grid">
+					<a class="contact-card" href="mailto:yourmail@email.com">
+						<div class="contact-k">Email</div>
+						<div class="contact-v">yourmail@email.com</div>
+					</a>
+					<a class="contact-card" href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">
+						<div class="contact-k">LinkedIn</div>
+						<div class="contact-v">/in/yourname</div>
+					</a>
+					<a class="contact-card" href="https://github.com/yourname" target="_blank" rel="noreferrer">
+						<div class="contact-k">GitHub</div>
+						<div class="contact-v">github.com/yourname</div>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<div>© <span id="year"></span> Kumar Kalyan</div>
+			<div class="footer-links">
+				<a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
